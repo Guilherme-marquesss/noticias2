@@ -25,7 +25,7 @@ body.escurecer::before{
     background-color: rgba(0, 0, 26, 0.5);
     top: 0;
     left: 0;
-
+ 
 }
 header{
     display: flex;
@@ -64,11 +64,9 @@ header .mobile a {
     font-weight: 400;
     line-height: 1.5rem;
 }
-
 header nav button {
     align-self: flex-end;
     margin-bottom: 4rem ;
-
 }
 .primeira-secao{
     margin-bottom: 4rem;
@@ -154,8 +152,6 @@ header nav button {
     line-height: 1.625rem ;
     color: var(--gunmetal);
 }
-
-
 @media (min-width: 1110px){
     main{
         display: grid;
@@ -165,20 +161,32 @@ header nav button {
 
     .primeira-secao{
         grid-column: 1/3;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.75rem;
     }
 
+    .primeira-secao picture{
+        grid-column: 1/3;
+    }
+    .primeira-secao img{
+        margin: 0;
+    }
 
-
+    .primeira-secao h1{
+        font-size: 3.5rem;
+    }
+    .segunda-secao h2{
+        font-size: 2.5rem;
+    }
     header > button {
         display: none;
     }
-
     header .desktop{
         display: flex;  
         gap: 2.5rem;
     }
-
-
     header .desktop a{
         font-size: 0.9375rem;
         line-height: 1.625rem;
